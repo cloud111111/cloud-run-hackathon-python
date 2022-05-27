@@ -22,8 +22,8 @@ logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-moves = ['T', 'T',  'L', 'T',  'L',  'L', 'T']
-# moves = ['F', 'T', 'L', 'R']
+# moves = ['T', 'T',  'L', 'T',  'L',  'L', 'T']
+moves = ['F', 'T', 'L', 'R']
 
 @app.route("/", methods=['GET'])
 def index():
